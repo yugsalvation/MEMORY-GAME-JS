@@ -97,6 +97,8 @@ document.addEventListener("DOMContentLoaded", () => {
     var cardId = this.getAttribute("data-id");
     if (cardMatched.indexOf(cardId) != -1) {
       return;
+    } else if (cardChosenId.indexOf(cardId) != -1) {
+      return;
     } else {
       cardChosenId.push(cardId);
       cardChosen.push(cardArray[cardId].name);
