@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
       cardMatched.push(cardChosenId[1]);
       console.log(cardMatched);
       if (cardMatched.length === 12) {
-        alert("GAME OVER");
+        alert("GAME OVER\nREFRESH THE PAGE TO PLAY AGAIN");
       }
 
       var sc = document.getElementById("result");
